@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TelInput Demo</title>
+    <link rel="stylesheet" href="./css/tel-input.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="form-group d-flex">
+        <div class="country-code">
+            <div class="form-group mr-3 mb-0">
+                <input type="text" class="form-control tel" name="country-code" tabindex="999" />
+            </div>
+            <div class="error-message"></div>
+        </div>
+        <div class="w-100">
+            <div class="form-group mode-form-group mb-0">
+                <input type="tel" class="form-control" name="user_phone" id="user_phone" placeholder="Phone" />
+                <div class="error-message"></div>
+                <input type="hidden" id="dial-code" class="form-control tel" name="dial-code" />
+                <input type="hidden" id="country-name" class="form-control tel" name="country-name" />
+            </div>
+        </div>
+    </div>
+    <script src="./js/all.min.js" defer></script>
+    <script src="./js/validate.js" defer></script>
+    <script src="./js/common.js" defer></script>
+</body>
+
+</html>
